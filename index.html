@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+
+        
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            background-color: #121212;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        
+        .content {
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        .name {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .highlight {
+            color: #00d9ff;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ccc;
+            margin: 1rem 0;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #00d9ff;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00d9ff;
+            color: #121212;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #00a3cc;
+        }
+
+        .profile-image {
+            position: relative;
+            max-width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+
+        
+        #about {
+            background-color: #121212;
+            padding: 60px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .about-content {
+            max-width: 500px;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-content span {
+            color: #00d9ff;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content .btn {
+            background: #00d9ff;
+            color: #121212;
+        }
+
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .profile-image {
+                margin-top: 2rem;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            #about {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Portfolio.</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <div class="content">
+            <h1>Hello, It's Me</h1>
+            <h2 class="name">John Kendric</h2>
+            <h3>And I'm a <span class="highlight">Frontend Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ab autem repellat reiciendis ipsam perspiciatis.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="profile-image">
+            <img src="profile.jpg.png" alt="Profile Picture">
+        </div>
+    </div>
+
+    
+    <section id="about">
+        <div class="profile-image">
+            <img src="profile.jpg.png" alt="About Picture">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <h3>Frontend Developer!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex delectus iste, aliquid officia quasi aliquam deleniti consequuntur suscipit ducimus tenetur maiores vel commodi veniam ratione!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Error enim ullam deserunt sapiente iure quo, aut, consequuntur odio quasi earum blanditiis suscipit hic at perferendis amet cumque! Suscipit, quos deserunt.</p>
+    </section>
+</body>
+</html>
